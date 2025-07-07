@@ -1,0 +1,44 @@
+module music_mem (
+  input   wire            clk,
+  input   wire            rst_n,
+  
+  input   wire    [9:0]   cnt,   // 10位输入
+  
+  output  reg     [4:0]   music
+);
+
+  // 1024×5位 ROM (32×1024位 = 4KB)
+  reg [4:0] note_rom [0:1023];
+  
+  // 初始化ROM（实际使用时应该从文件加载）
+  initial begin
+    // 初始化为静音（0）
+    for (integer i = 0; i < 1024; i = i + 1) begin
+      note_rom[i] = 5'd0;
+    end
+    
+    // 示例：添加测试音符序列
+    // 前10个音符示例（实际需要填充1024个）
+    note_rom[0]  = 5'd13; // 中音La
+    note_rom[1]  = 5'd13;
+    note_rom[2]  = 5'd13;
+    note_rom[3]  = 5'd12; // 中音Sol
+    note_rom[4]  = 5'd10; // 中音Fa
+    note_rom[5]  = 5'd10;
+    note_rom[6]  = 5'd12;
+    note_rom[7]  = 5'd12;
+    note_rom[8]  = 5'd15; // 高音Do
+    note_rom[9]  = 5'd15;
+    
+    // 此处应添加完整的1024个音符...
+    // 实际使用时应从文件加载
+  end
+
+  always @ (posedge clk, negedge rst_n) begin
+    if (rst_n == 1'b0)
+      music <= 5'd0;
+    else
+      music <= note_rom[cnt]; // 直接ROM查找
+  end
+
+endmodule

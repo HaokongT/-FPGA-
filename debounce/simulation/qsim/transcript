@@ -1,0 +1,34 @@
+# do debounce.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module debounce
+# 
+# Top level modules:
+# 	debounce
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module debounce_vlg_sample_tst
+# -- Compiling module debounce_vlg_check_tst
+# -- Compiling module debounce_vlg_vec_tst
+# 
+# Top level modules:
+# 	debounce_vlg_vec_tst
+# vsim -L cycloneiv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.debounce_vlg_vec_tst 
+# Loading work.debounce_vlg_vec_tst
+# Loading work.debounce
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading work.debounce_vlg_sample_tst
+# Loading work.debounce_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port btn_pressed :: @time = 19691000.000 ps
+#      Expected value = 0
+#      Real value = 1
+#           1 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(153)
+#    Time: 20 us  Iteration: 0  Instance: /debounce_vlg_vec_tst/tb_out

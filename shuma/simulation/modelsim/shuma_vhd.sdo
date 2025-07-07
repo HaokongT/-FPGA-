@@ -1,0 +1,151 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EP4CGX15BF14C6 Package FBGA169
+// 
+
+//
+// This file contains Slow Corner delays for the design using part EP4CGX15BF14C6,
+// with speed grade 6, core voltage 1.2V, and temperature 85 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim-Altera (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "shuma")
+  (DATE "06/21/2025 16:59:42")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II 64-Bit")
+  (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "cycloneiv_io_obuf")
+    (INSTANCE \\seg\[0\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3081:3081:3081) (3319:3319:3319))
+        (IOPATH i o (2765:2765:2765) (2694:2694:2694))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_io_obuf")
+    (INSTANCE \\seg\[1\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (946:946:946) (957:957:957))
+        (IOPATH i o (2446:2446:2446) (2544:2544:2544))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_io_obuf")
+    (INSTANCE \\seg\[2\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3768:3768:3768) (3502:3502:3502))
+        (IOPATH i o (2446:2446:2446) (2544:2544:2544))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_io_obuf")
+    (INSTANCE \\seg\[3\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3773:3773:3773) (3505:3505:3505))
+        (IOPATH i o (2537:2537:2537) (2639:2639:2639))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_io_obuf")
+    (INSTANCE \\seg\[4\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (4152:4152:4152) (3882:3882:3882))
+        (IOPATH i o (2436:2436:2436) (2534:2534:2534))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_io_obuf")
+    (INSTANCE \\seg\[5\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (887:887:887) (911:911:911))
+        (IOPATH i o (2527:2527:2527) (2629:2629:2629))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_io_obuf")
+    (INSTANCE \\seg\[6\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (3768:3768:3768) (3502:3502:3502))
+        (IOPATH i o (3344:3344:3344) (3387:3387:3387))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_io_ibuf")
+    (INSTANCE \\state\[1\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (535:535:535) (708:708:708))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_io_ibuf")
+    (INSTANCE \\state\[0\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (497:497:497) (671:671:671))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_lcell_comb")
+    (INSTANCE \\Decoder0\~0\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (3632:3632:3632) (3927:3927:3927))
+        (PORT datad (3876:3876:3876) (4204:4204:4204))
+        (IOPATH datac combout (243:243:243) (241:241:241))
+        (IOPATH datad combout (130:130:130) (120:120:120))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneiv_lcell_comb")
+    (INSTANCE \\Decoder0\~1\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT datac (3637:3637:3637) (3932:3932:3932))
+        (PORT datad (3874:3874:3874) (4202:4202:4202))
+        (IOPATH datac combout (241:241:241) (242:242:242))
+        (IOPATH datad combout (130:130:130) (120:120:120))
+      )
+    )
+  )
+)

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\QuartusDate\keshe1\music_mem\simulation\qsim
+vmusic_mem
+Z1 I<4a7ZkOBX]V`53iL4c:@W2
+Z2 VK6c`eO;eo;Pn=9U;c>R7j0
+Z3 dE:\QuartusDate\keshe1\music_mem\simulation\qsim
+Z4 w1750497205
+Z5 8music_mem.vo
+Z6 Fmusic_mem.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 J_TdY?33X[I]An>?NPRO]0
+!s85 0
+Z10 !s108 1750497206.288000
+Z11 !s107 music_mem.vo|
+Z12 !s90 -work|work|music_mem.vo|
+!s101 -O0
+vmusic_mem_vlg_check_tst
+!i10b 1
+!s100 l8Pl6DSD2Pe?=JXVmHzVB1
+IlzHD:XTNOQnj2ehOckc?M0
+VX3a75AJ>H>3B1TBHbnE5G3
+R3
+Z13 w1750497204
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1750497206.422000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+vmusic_mem_vlg_sample_tst
+!i10b 1
+!s100 am3WD=B;De^PKc<ldElmc1
+IPm5m7ef16HXgGdF_?Sg;33
+V>JW_4zPkS=j5?a@m01f=_3
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vmusic_mem_vlg_vec_tst
+!i10b 1
+!s100 >0eC6=gWO3hl^SLDIXX<Q2
+IKmjmOLhTJIb=cMTB`HFHc0
+V9OQ_M04i2FnCWgU=M^F5[0
+R3
+R13
+R14
+R15
+L0 227
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

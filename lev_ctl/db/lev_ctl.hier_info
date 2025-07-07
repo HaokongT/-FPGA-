@@ -1,0 +1,41 @@
+|lev_ctl
+clk_1mhz => wave_cnt_max[0].CLK
+clk_1mhz => wave_cnt_max[1].CLK
+clk_1mhz => wave_cnt_max[2].CLK
+clk_1mhz => wave_cnt_max[3].CLK
+clk_1mhz => wave_cnt_max[4].CLK
+clk_1mhz => wave_cnt_max[5].CLK
+clk_1mhz => wave_cnt_max[6].CLK
+clk_1mhz => wave_cnt_max[7].CLK
+clk_1mhz => wave_cnt_max[8].CLK
+clk_1mhz => wave_cnt_max[9].CLK
+clk_1mhz => wave_cnt_max[10].CLK
+rst_n => wave_cnt_max[0].ACLR
+rst_n => wave_cnt_max[1].ACLR
+rst_n => wave_cnt_max[2].ACLR
+rst_n => wave_cnt_max[3].ACLR
+rst_n => wave_cnt_max[4].ACLR
+rst_n => wave_cnt_max[5].ACLR
+rst_n => wave_cnt_max[6].ACLR
+rst_n => wave_cnt_max[7].ACLR
+rst_n => wave_cnt_max[8].ACLR
+rst_n => wave_cnt_max[9].ACLR
+rst_n => wave_cnt_max[10].ACLR
+data[0] => Decoder0.IN4
+data[1] => Decoder0.IN3
+data[2] => Decoder0.IN2
+data[3] => Decoder0.IN1
+data[4] => Decoder0.IN0
+div_max[0] <= wave_cnt_max[0].DB_MAX_OUTPUT_PORT_TYPE
+div_max[1] <= wave_cnt_max[1].DB_MAX_OUTPUT_PORT_TYPE
+div_max[2] <= wave_cnt_max[2].DB_MAX_OUTPUT_PORT_TYPE
+div_max[3] <= wave_cnt_max[3].DB_MAX_OUTPUT_PORT_TYPE
+div_max[4] <= wave_cnt_max[4].DB_MAX_OUTPUT_PORT_TYPE
+div_max[5] <= wave_cnt_max[5].DB_MAX_OUTPUT_PORT_TYPE
+div_max[6] <= wave_cnt_max[6].DB_MAX_OUTPUT_PORT_TYPE
+div_max[7] <= wave_cnt_max[7].DB_MAX_OUTPUT_PORT_TYPE
+div_max[8] <= wave_cnt_max[8].DB_MAX_OUTPUT_PORT_TYPE
+div_max[9] <= wave_cnt_max[9].DB_MAX_OUTPUT_PORT_TYPE
+div_max[10] <= wave_cnt_max[10].DB_MAX_OUTPUT_PORT_TYPE
+
+

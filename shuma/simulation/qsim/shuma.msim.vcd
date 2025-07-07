@@ -1,0 +1,103 @@
+$comment
+	File created using the following command:
+		vcd file shuma.msim.vcd -direction
+$end
+$date
+	Sat Jun 21 17:02:49 2025
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module shuma_vlg_vec_tst $end
+$var reg 2 ! state [1:0] $end
+$var wire 1 " seg [6] $end
+$var wire 1 # seg [5] $end
+$var wire 1 $ seg [4] $end
+$var wire 1 % seg [3] $end
+$var wire 1 & seg [2] $end
+$var wire 1 ' seg [1] $end
+$var wire 1 ( seg [0] $end
+$var wire 1 ) sampler $end
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 seg[0]~output_o $end
+$var wire 1 1 seg[1]~output_o $end
+$var wire 1 2 seg[2]~output_o $end
+$var wire 1 3 seg[3]~output_o $end
+$var wire 1 4 seg[4]~output_o $end
+$var wire 1 5 seg[5]~output_o $end
+$var wire 1 6 seg[6]~output_o $end
+$var wire 1 7 state[1]~input_o $end
+$var wire 1 8 state[0]~input_o $end
+$var wire 1 9 Decoder0~0_combout $end
+$var wire 1 : Decoder0~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0(
+1'
+1&
+1%
+1$
+1#
+1"
+x)
+0*
+1+
+x,
+1-
+1.
+1/
+00
+11
+12
+13
+14
+15
+16
+07
+08
+09
+0:
+$end
+#350000
+b1 !
+18
+0)
+19
+02
+03
+06
+0&
+0%
+0"
+01
+0'
+#700000
+b11 !
+b10 !
+08
+1)
+17
+12
+13
+16
+10
+04
+1&
+1%
+1"
+1(
+0$
+#1000000

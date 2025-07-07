@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\QuartusDate\keshe1\wave_gen\simulation\qsim
+vwave_gen
+Z1 IHF?Pz;ja95fIjh8B8<Cg]1
+Z2 VeWVUYOTPOLdIFQH^8n<fQ0
+Z3 dE:\QuartusDate\keshe1\wave_gen\simulation\qsim
+Z4 w1750495467
+Z5 8wave_gen.vo
+Z6 Fwave_gen.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 L]mHm46PS@zk6Z_Q9d^k<3
+!s85 0
+Z10 !s108 1750495469.501000
+Z11 !s107 wave_gen.vo|
+Z12 !s90 -work|work|wave_gen.vo|
+!s101 -O0
+vwave_gen_vlg_check_tst
+!i10b 1
+!s100 Qd3mnlZMo^9AiM20<<4hY3
+IQ4HJn1V:=@meFb:8EAO[n3
+V89l?6jTDV6j_AoDhfQNa21
+R3
+Z13 w1750495466
+Z14 8Waveform.vwf.vt
+Z15 FWaveform.vwf.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z16 !s108 1750495469.945000
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R8
+vwave_gen_vlg_sample_tst
+!i10b 1
+!s100 VzVE?F:k^Q[SPg[jakzQQ2
+ImXMD@RJh]noT4REoa<jCb3
+VEeIiPnzOzY>P6j@;D45Yi2
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vwave_gen_vlg_vec_tst
+!i10b 1
+!s100 <:m3aZIFgW5DcBK24U^7g3
+IcGm<fcYZa1E6=>4cCHg@^2
+V@6e[YVKMAIlCn<LH>J3cm1
+R3
+R13
+R14
+R15
+L0 156
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

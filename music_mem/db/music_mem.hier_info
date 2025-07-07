@@ -1,0 +1,28 @@
+|music_mem
+clk => music[0]~reg0.CLK
+clk => music[1]~reg0.CLK
+clk => music[2]~reg0.CLK
+clk => music[3]~reg0.CLK
+clk => music[4]~reg0.CLK
+rst_n => music[0]~reg0.ACLR
+rst_n => music[1]~reg0.ACLR
+rst_n => music[2]~reg0.ACLR
+rst_n => music[3]~reg0.ACLR
+rst_n => music[4]~reg0.ACLR
+cnt[0] => note_rom.RADDR
+cnt[1] => note_rom.RADDR1
+cnt[2] => note_rom.RADDR2
+cnt[3] => note_rom.RADDR3
+cnt[4] => note_rom.RADDR4
+cnt[5] => note_rom.RADDR5
+cnt[6] => note_rom.RADDR6
+cnt[7] => note_rom.RADDR7
+cnt[8] => note_rom.RADDR8
+cnt[9] => note_rom.RADDR9
+music[0] <= music[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+music[1] <= music[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+music[2] <= music[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+music[3] <= music[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+music[4] <= music[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
