@@ -2,6 +2,7 @@
 基于quarterii制作的简易的FPGA音乐播放器
 
 .v文件是完整的代码
+
 一共7个文件夹，对应着debounce、lev_ctl、music、music_mem、shuma、speed_ctrl、wave_gen
 
 music是顶层设计top
