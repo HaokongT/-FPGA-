@@ -1,0 +1,17 @@
+module shuma(
+    input [1:0] state,  // 输入状态
+    output reg [6:0] seg // 数码管输出
+);
+
+parameter IDLE = 2'b00, PLAY1 = 2'b01, PLAY2 = 2'b10;
+
+always @(*) begin
+    case (state)
+        IDLE:  seg = 7'b1000000; // 显示"0"
+        PLAY1: seg = 7'b1111001; // 显示"1"
+        PLAY2: seg = 7'b0100100; // 显示"2"
+        default: seg = 7'b1000000;
+    endcase
+end
+
+endmodule

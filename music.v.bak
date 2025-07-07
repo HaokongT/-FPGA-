@@ -1,0 +1,116 @@
+module music(
+    input clk_50mhz,
+    input rst_n,
+    input btn, 
+    output been,
+    output [6:0] seg
+);
+
+// 时钟分频
+reg [5:0] clk_div;
+reg clk_1mhz;
+//分频
+always @(posedge clk_50mhz or negedge rst_n) begin
+    if (!rst_n) begin
+        clk_div <= 0;
+        clk_1mhz <= 0;
+    end else begin
+        if (clk_div == 49) begin
+            clk_div <= 0;
+            clk_1mhz <= ~clk_1mhz;
+        end else
+            clk_div <= clk_div + 1;
+    end
+end
+
+//always @(posedge clk_50mhz) begin
+//    if(clk_div == 24) begin  // 50MHz/50=1MHz
+//        clk_1mhz <= ~clk_1mhz;
+//        clk_div <= 0;
+//    end else clk_div <= clk_div + 1;
+//end
+
+// 按键消抖实例化
+wire btn_pressed;
+debounce u_debounce(
+    .clk(clk_1mhz),
+    .rst_n(rst_n),
+    .btn_in(btn),
+    .btn_pressed(btn_pressed)
+);
+
+// 状态机
+reg [1:0] state;
+parameter IDLE = 2'b00, PLAY1 = 2'b01, PLAY2 = 2'b10;
+
+// 数码管显示实例化
+shuma u_shuma(
+    .state(state),
+    .seg(seg)
+);
+
+
+debounce u_debounce(
+    input clk,          // 1MHz时钟
+    input rst_n,
+    input btn_in,       // 原始按键输入
+    output btn_pressed  // 消抖后的脉冲信号
+);
+
+
+music_mem u_music_mem(
+  input   wire            clk,
+  input   wire            rst_n,
+  
+  input   wire    [9:0]   cnt,   // 10位输入
+  
+  output  reg     [4:0]   music
+);
+
+
+speed_ctrl u_speed_ctrl(
+  input   wire            clk,
+  input   wire            rst_n,
+  
+  output  reg   [9:0]     cnt    // 10位计数器 (0-1023)
+);
+
+
+
+wave_gen u_wave_gen(
+    input clk_1mhz,
+    input rst_n,
+	 
+	 
+    input [10:0] div_max,
+	 
+	 
+    output reg been
+);
+
+
+// 状态机逻辑
+always @(posedge clk_1mhz or negedge rst_n) begin
+    if (!rst_n) begin
+        state <= IDLE;
+    end else begin
+        case (state)
+            IDLE: if (btn_pressed) state <= PLAY1;
+            PLAY1: begin
+                if (btn_pressed) 
+                    state <= PLAY2;
+                else if (song_end) // 歌曲结束自动重新播放
+                    state <= PLAY1;
+            end
+            PLAY2: begin
+                if (btn_pressed) 
+                    state <= IDLE;
+                else if (song_end) // 歌曲结束自动重新播放
+                    state <= PLAY2;
+            end
+            default: state <= IDLE;
+        endcase
+    end
+end
+
+endmodule

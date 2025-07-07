@@ -1,0 +1,52 @@
+module lev_ctl
+(
+    input clk_1mhz,
+    input rst_n,
+
+    input [4:0] data,
+    output reg [10:0] wave_cnt_max
+	 
+	 
+	 
+);
+
+
+always @(posedge clk_1mhz or negedge rst_n)
+    if (~rst_n)
+        wave_cnt_max <= 11'd0;
+    else case(data[4:0])
+        5'b01_001:
+        5'b01_010:
+        5'b01_011:
+        5'b01_100:
+        5'b01_101:
+        5'b01_110:
+        5'b01_111:
+           
+
+        5'b10_001:
+        5'b10_010:
+        5'b10_011:
+        5'b10_100:
+        5'b10_101:
+        5'b10_110:
+        5'b10_111:			  
+			  
+			  
+        5'b11_001:
+        5'b11_010:
+        5'b11_011:
+        5'b11_100:
+        5'b11_101:
+        5'b11_110:
+        5'b11_111:			  
+			  
+			  
+        default:wave_cnt_max <=11'd0;
+		  
+		  
+	endcase		  
+		
+			  
+
+endmodule
