@@ -14,3 +14,10 @@ speed_ctrl可以控制每个音符的速度
 免费开源学习
 如需商用一定需要联系通知，若发现非法商用，必究法律责任
 
+所有文件内容请于master分支中查看
+
+All file contents can be viewed in the master branch.
+
+
+
+
